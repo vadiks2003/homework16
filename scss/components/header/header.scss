@@ -1,0 +1,34 @@
+header{
+    .container
+    {
+        .firstheader{
+            background-color: $col-grey;
+            
+            
+
+            .img{
+                display:inline-block;
+                height:14px;
+                width:14px;
+                background-image: url(./../images/phone.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .img-1
+            {
+                margin-left: 20px;
+                margin-right: 12px;
+                
+            }
+            .img-2
+            {
+                
+                background-image: url(./../images/web.svg);
+                
+                align-self: center;
+                size:6.25px;
+            }
+        }
+    }
+}
