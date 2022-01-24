@@ -32,14 +32,46 @@
         <!--header2 2-->
 
         <div class="container">
-          <div class="menu d-flex flex-wrap py-3">
+          <div class="secondheader shadow-lg  menu d-flex flex-wrap py-3">
             <img class="navimg1" src="./../images/logo.svg" alt="">
             <img class="navimg2" src="./../images/icn_search.svg" alt="">
-            <li class="navbar d-flex flex-wrap justify-content-center">
-              <a href="#" class="nav-item dropdown-toggle mx-2">Products</a>
-              <a href="#" class="nav-item dropdown-toggle mx-2">Applications</a>
-              <a href="#" class="nav-item mx-2">Documentation</a>
-            </li>
+
+              <ul class="navbar">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Applications
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Documentation</a>
+                </li>
+              </ul>
+
+            <img class="navimg3 d-flex" src="./../images/user.svg" alt="">
+            <img class="navimg4" src="./../images/shoppingcart.svg" alt="">
           </div>
         </div>
       </div>
@@ -47,150 +79,335 @@
 
     <main>
       <div class="container">
-        <div class="displaywall">
-          Products - Display Wall - Products
-        </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Products</a></li>
+            <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
+            <li class="breadcrumb-item" aria-current="page">Products</li>
+          </ol>
+        </nav>
         <h2>Display wall</h2>
+
+        
+
         <div class="maindisplay">
-          <div class="maindisplay__navigation"></div> 
-          <div class="maindisplay__search"></div>
-          <div class="maindisplay__filters">
-            <span class="filter_results">23</span> results
-            <span> clear all filters</span> <!-- todo: +img css-->
-            <p class="subcathegory">
-              <span class="subcathegory__text">Subcathegory</span>
-              <div class="cathegory">
-                Xpressions <span class="cathegoryamount">(8)</span>
-              </div>
-              <div class="cathegory">
-                Xtension <span class="cathegoryamount">(8)</span>
-              </div>
-              <div class="cathegory">
-                Virage <span class="cathegoryamount">(8)</span>
-              </div>
-              <div class="cathegory">
-                Contour <span class="cathegoryamount">(4)</span>
-              </div>
-              <div class="cathegory">
-                Xperience <span class="cathegoryamount">(4)</span>
-              </div>
-            </p>
-            <p class="subcathegory">
-              <span class="subcathegory__text">Type</span>
-              <div class="cathegory">
-                <div class="cathegory">Pop-up <span class="cathegoryamount">(8)</span></div>
-                <div class="cathegory">Tubar <span class="cathegoryamount">(8)</span></div>
-                <div class="cathegory">Table top <span class="cathegoryamount">(8)</span></div>
-              </div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
-            <p class="subcathegory">
-              <div class="cathegory"></div>
-            </p>
+          <div class="maindisplay__firstrow d-flex flex-wrap d-flex-row">
+            <div class="maindisplay__navigation">
+              <ul class="display_wall navbar">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Display Wall
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="maindisplay__search">
+                <label for="text" class="form-label"></label>
+                <input type="text" class="form-control" id="search" placeholder="Search">
+            </div>
           </div>
-          <div class="maindisplay__content">
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
+          <div class="maindisplay__secondrow d-flex ">
+            <div class="maindisplay__filters">
+              <span class="filter_results">23</span> results
+              <span> clear all filters</span> <!-- todo: +img css-->
+              <p class="subcathegory">
+                <h3 class="header-3">Subcathegory</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  Xpressions <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  Xtension <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Virage <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Contour <span class="cathegoryamount">(4)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Xperience <span class="cathegoryamount">(4)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Type</h3>
+                <div class="cathegory">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    Pop-up <span class="cathegoryamount">(8)</span>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    Tubar <span class="cathegoryamount">(8)</span>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                    Table top <span class="cathegoryamount">(8)</span>
+                  </div>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Features</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Backlit <span class="cathegoryamount">(7)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  TV Mount <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Shelving <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Arch <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Double sided <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Width</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  2.5 <span class="cathegoryamount">(7)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  5 <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  8 <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  10 <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  20 <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Height</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  4 <span class="cathegoryamount">(7)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  8 <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  10 <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Form</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Straight <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Curved <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Price Range</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  550-699 <span class="cathegoryamount">(27)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  700-999 <span class="cathegoryamount">(38)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  1000-1999 <span class="cathegoryamount">(48)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  2000-3999 <span class="cathegoryamount">(8)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  4000+ <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
+              <p class="subcathegory">
+                <h3 class="header-3">Set-up Time</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  1+ (Fast) <span class="cathegoryamount">(27)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  5+ (Easy) <span class="cathegoryamount">(38)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  10+ (Average) <span class="cathegoryamount">(48)</span>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked>
+                  Double sided <span class="cathegoryamount">(8)</span>
+                </div>
+              </p>
             </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
-            <div class="maindisplay__content__item">
-              <div class="img"><img src="" alt=""></div>
-              <h4></h4>
-              <span></span>
-            </div>
+            <ul class="maindisplay__content list-group d-flex">
+              <li class="maindisplay__content__item card">
+                <img src="./../images/contour.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </li>
+              <li class="maindisplay__content__item card">
+                <img src="./../images/contour2.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </li>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour3.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card"  aria-current="active">
+                <img src="./../images/contour2.svg" alt="">
+                <h4>Contour 8x8</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour3.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour2.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour3.svg" alt="">
+                <h4></h4>
+                <span></span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour2.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour3.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour2.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+              <div class="maindisplay__content__item card">
+                <img src="./../images/contour3.svg" alt="">
+                <h4>Contour 10x4</h4>
+                <span>8123,99 €</span>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
     </main>
 
     <footer>
-
+      <div class="footer1">
+        <div class="footer1__contactdata">
+          <!--
+            logo
+            place
+            -phone
+            email
+            made in france  ul? div?
+          -->
+        </div>
+        <div class="footer1__navigation">
+          <div class="footer1__navigation__item">
+            <!--Products-->
+          </div>
+          <div class="footer1__navigation__item">
+            <!--applications-->
+          </div>
+          <div class="footer1__navigation__item">
+            <!--my profile-->
+          </div>
+          <div class="footer1__navigation__item">
+            <!--duo display-->
+          </div>
+        </div>
+        <div class="footer1__newsettler">
+          <!--newsettler h-->
+          <!--email address
+          and language-->
+          <div class="footer1__newsettler__links">
+            <a href="flickr.com">
+              <img src="" alt="">  <!-- social media links -->
+            </a>
+            <a href="twitter.com">
+              <img src="" alt="">
+            </a>
+            <a href="facebook.com">
+              <img src="" alt="">
+            </a>
+            <a href="instagram.com">
+              <img src="" alt="">
+            </a>
+            <a href="linedin.com">
+              <img src="" alt="">
+            </a>
+            <a href="youtube.com">
+              <img src="" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        C 2021 Duo Industrie. All rights reserved. From Duo with
+        <img src="" alt=""> <!--heart-->
+        <img src="" alt=""> <!--strelka vverh-->
+      </div>
     </footer>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

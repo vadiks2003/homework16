@@ -1,9 +1,11 @@
 header{
     .container
     {
+        padding: 0;
+
         .firstheader{
             background-color: $col-grey;
-            
+            padding: 0 60px;
             
 
             .img{
@@ -28,6 +30,23 @@ header{
                 
                 align-self: center;
                 size:6.25px;
+            }
+        }
+
+        .secondheader{
+            padding-left: 60px;
+            background-color: white;
+            .navimg2
+            {
+                margin: 0 20px;
+            }
+            .navimg3
+            {
+                
+            }
+            .navimg4
+            {
+                margin-left: 20px;
             }
         }
     }

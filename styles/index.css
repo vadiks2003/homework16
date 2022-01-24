@@ -75,8 +75,12 @@ a {
   color: black;
 }
 
+header .container {
+  padding: 0;
+}
 header .container .firstheader {
   background-color: #F4F4F4;
+  padding: 0 60px;
 }
 header .container .firstheader .img {
   display: inline-block;
@@ -94,6 +98,78 @@ header .container .firstheader .img-2 {
   background-image: url(./../images/web.svg);
   align-self: center;
   size: 6.25px;
+}
+header .container .secondheader {
+  padding-left: 60px;
+  background-color: white;
+}
+header .container .secondheader .navimg2 {
+  margin: 0 20px;
+}
+header .container .secondheader .navimg4 {
+  margin-left: 20px;
+}
+
+main .container {
+  background-color: #F4F4F4;
+  padding: 0 80px;
+}
+main .container h2 {
+  margin-top: 10px;
+  margin-bottom: 37px;
+}
+main .container .breadcrumb {
+  padding-top: 11px;
+}
+main .container .display_wall {
+  display: inline-block;
+  background-color: white;
+  padding: 16px 110px 25px 16px;
+  border-radius: 40px;
+}
+main .container .maindisplay__navigation {
+  width: 33%;
+}
+main .container .maindisplay__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
+main .container .maindisplay__search input {
+  background-color: white;
+  padding-left: 39px;
+  padding-right: 50%;
+  border-radius: 40px;
+  height: 60px;
+}
+main .container .maindisplay__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 2000px;
+}
+main .container .maindisplay__content__item {
+  text-align: center;
+  border-radius: 20px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  max-height: 392px;
+  max-width: 271px;
+}
+main .container .maindisplay__content__item img {
+  max-width: 282px;
+  max-height: 290px;
+}
+main .container .maindisplay__filters {
+  background-color: white;
+  margin-top: 22px;
+  padding: 10px 50px;
+  border-radius: 40px;
+}
+main .container .maindisplay__content {
+  margin-top: 23px;
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
