@@ -110,6 +110,9 @@ header .container .secondheader .navimg4 {
   margin-left: 20px;
 }
 
+main {
+  margin-bottom: 60px;
+}
 main .container {
   background-color: #F4F4F4;
   padding: 0 80px;
@@ -127,19 +130,18 @@ main .container .display_wall {
   padding: 16px 110px 25px 16px;
   border-radius: 40px;
 }
-main .container .maindisplay__navigation {
-  width: 33%;
-}
 main .container .maindisplay__search {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 66%;
+  width: 874px;
+  margin-right: 2px;
 }
 main .container .maindisplay__search input {
+  margin-right: 40px;
   background-color: white;
   padding-left: 39px;
-  padding-right: 50%;
+  margin-left: 100px;
   border-radius: 40px;
   height: 60px;
 }
@@ -170,6 +172,19 @@ main .container .maindisplay__filters {
 main .container .maindisplay__content {
   margin-top: 23px;
   margin-left: 30px;
+}
+
+footer {
+  color: white;
+}
+footer .footer1 {
+  background-color: #26282C;
+}
+footer .footer1 img {
+  width: 200px;
+}
+footer .footer2 {
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */

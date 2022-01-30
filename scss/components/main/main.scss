@@ -1,4 +1,5 @@
 main{
+    margin-bottom: 60px;
     .container
     {
         background-color: $col-grey;
@@ -25,24 +26,26 @@ main{
         .maindisplay{
             &__navigation
             {
-                width: 33%;
+                
             }
 
             &__search
-                {
+            {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 66%;
+                width: 874px;
+                margin-right: 2px;
                 
                 
-
                 input{
+                    margin-right: 40px;
                     background-color: white;
                     padding-left: 39px;
-                    padding-right: 50%;
+                    margin-left: 100px;
                     border-radius: 40px;
                     height: 60px;
+
                 }
             }
 
