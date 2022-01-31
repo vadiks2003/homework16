@@ -159,6 +159,12 @@ main .container .maindisplay__content__item {
   max-height: 392px;
   max-width: 271px;
 }
+main .container .maindisplay__content__item .tag {
+  position: absolute;
+  top: 10px;
+  left: 75%;
+  width: 56px;
+}
 main .container .maindisplay__content__item img {
   max-width: 282px;
   max-height: 290px;
@@ -178,10 +184,23 @@ footer {
   color: white;
 }
 footer .footer1 {
+  padding: 47px 41px;
   background-color: #26282C;
 }
 footer .footer1 img {
   width: 200px;
+}
+footer .footer1__contactdata {
+  max-width: 200px;
+}
+footer .footer1__navigation {
+  margin-left: 60px;
+}
+footer .footer1__navigation__item {
+  margin: 0 32px;
+}
+footer .footer1 .imgicon {
+  width: 24px;
 }
 footer .footer2 {
   background-color: #000000;

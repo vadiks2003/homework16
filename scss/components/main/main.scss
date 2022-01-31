@@ -65,6 +65,14 @@ main{
                     max-height: 392px;
                     max-width: 271px;
 
+                    .tag
+                    {
+                        position: absolute;
+                        top: 10px;
+                        left: 75%;
+                        width: 56px;
+                    }
+
                     img{
                         max-width: 282px;
                         max-height: 290px;
