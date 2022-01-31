@@ -64,6 +64,14 @@ main{
                     margin-bottom: 14px;
                     max-height: 392px;
                     max-width: 271px;
+                        box-shadow: 0 0 9px -5px;
+                        overflow: hidden;
+                    &:hover
+                    {
+                        transition: 0.3s;
+                        box-shadow: 10px 10px;
+                        
+                    }
 
                     .tag
                     {
@@ -76,6 +84,10 @@ main{
                     img{
                         max-width: 282px;
                         max-height: 290px;
+                        &:hover{
+                            transition: 0.3s;
+                            transform: translateX(-100%);
+                        }
                     }
                 }
             }
